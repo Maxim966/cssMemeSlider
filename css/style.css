@@ -64,10 +64,6 @@ html {
   }
 
   .pagination {
-    order: 3;
-  }
-
-  .pagination {
     order: 2;
   }
 
@@ -92,8 +88,8 @@ html {
   .indicator {
     cursor: pointer;
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 1.5em;
+    height: 1.5em;
     border-radius: 50%;
     border: 3px solid rgb(112, 97, 247);
     background-color: rgb(112, 97, 247);
@@ -196,3 +192,19 @@ html {
   transform: translateX(-300%);
 }
 
+@media (max-width: 768px) {
+  .pagination {
+    display: flex;
+    column-gap: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  .wrapper-text {
+    width: 100%;
+    order: 2;
+  }
+
+  .descr {
+    font-size: 1em;
+  }
+}
