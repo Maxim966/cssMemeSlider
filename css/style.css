@@ -77,7 +77,7 @@ html {
   }
 
   .text-item {
-    transition: transform 1s ease;
+    transition: transform 0.5s linear;
   }
 
   .descr {
@@ -175,3 +175,24 @@ html {
  .text-item {
   min-width: 100%;
  }
+
+ .texts-list {
+  transition: transform 0.5s linear;
+ }
+
+ #button-1:checked ~ .wrapper-text .texts-list {
+  transform: translateX(0);
+}
+
+ #button-2:checked ~ .wrapper-text .texts-list {
+  transform: translateX(-100%);
+}
+
+ #button-3:checked ~ .wrapper-text .texts-list {
+  transform: translateX(-200%);
+}
+
+ #button-4:checked ~ .wrapper-text .texts-list {
+  transform: translateX(-300%);
+}
+
