@@ -2,6 +2,10 @@ html {
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
+
+  body {
+    background-color: rgb(80, 80, 80);
+  }
   
   *,
   *::before,
@@ -18,3 +22,98 @@ html {
     max-width: 100%;
     vertical-align: middle;
   }
+
+  .list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .container {
+    margin: 0 auto;
+    height: 100vh;
+    align-content: center;
+    padding: 0 2em;
+    max-width: 60em;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider {
+    display: flex;
+    border-radius: 2%;
+    margin-bottom: 1.5em;
+    max-width: 60em;
+    overflow: hidden;
+    align-self: center;
+  }
+
+  .slide {
+    min-width: 100%;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    order: 2;
+  }
+
+  .texts-list {
+    display: flex;
+    color: #ffffff;
+  }
+
+  .descr {
+    margin: 0;
+    font-size: 1.2em;
+  }
+
+  .text-item:nth-child(2),
+  .text-item:nth-child(3),
+  .text-item:nth-child(4) {
+    display: none;
+  }
+
+  input[type=radio] {
+    display: none;
+  }
+
+
+  .indicator {
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid rgb(112, 97, 247);
+    background-color: rgb(112, 97, 247);
+  }
+  
+  .custom-btn input[type=radio]:checked + .indicator {
+    background-color: black;
+  }
+
+  .indicator:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
+
+  .indicator:focus {
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
+
+  .indicator:active {
+    background-color: rgb(206, 206, 206);
+    border-color: rgb(206, 206, 206);
+  }
+
