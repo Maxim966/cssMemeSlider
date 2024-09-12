@@ -64,7 +64,17 @@ html {
   }
 
   .pagination {
+    display: flex;
+    align-items: center;
     order: 2;
+  }
+
+  .custom-btn {
+    cursor: pointer;
+    width: 2.5em;
+    height: 2.5em;
+    align-content: center;
+    text-align: center;
   }
 
   .texts-list {
@@ -94,7 +104,6 @@ html {
     border: 3px solid rgb(112, 97, 247);
     background-color: rgb(112, 97, 247);
   }
-
   
   
   input[id="button-1"]:checked ~ .pagination label[for="button-1"] .indicator {
@@ -114,17 +123,17 @@ html {
   }
 
 
-  .indicator:hover {
+  .custom-btn:hover > .indicator {
     background-color: #ffffff;
     border-color: #ffffff;
   }
 
-  .indicator:focus {
+  .custom-btn:focus > .indicator {
     background-color: #ffffff;
     border-color: #ffffff;
   }
 
-  .indicator:active {
+  .custom-btn:active > .indicator {
     background-color: rgb(206, 206, 206);
     border-color: rgb(206, 206, 206);
   }
