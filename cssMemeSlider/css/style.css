@@ -101,7 +101,7 @@ html {
     width: 1.5em;
     height: 1.5em;
     border-radius: 50%;
-    border: 3px solid rgb(112, 97, 247);
+    border: 0.2em solid rgb(112, 97, 247);
     background-color: rgb(112, 97, 247);
   }
   
